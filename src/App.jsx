@@ -11,16 +11,14 @@ function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
   function handlePrev() {
-    if (step === 1) {
-      return;
+    if (step > 1) {
+      setStep((prevStep) => prevStep - 1);
     }
-    setStep(step - 1);
   }
   function handleNext() {
-    if (step === messages.length) {
-      return;
+    if (step < messages.length) {
+      setStep((nextStep) => nextStep + 1);
     }
-    setStep(step + 1);
   }
   function handleOpen() {
     setIsOpen(!isOpen);
