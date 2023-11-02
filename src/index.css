@@ -61,6 +61,7 @@ body {
   border-radius: 100px;
   font-size: 14px;
   font-weight: bold;
+  background-color: rgb(219, 219, 219);
 
   display: flex;
   align-items: center;
